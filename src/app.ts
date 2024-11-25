@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://localhost:8000', 'https://startup-app-fawn.vercel.app'],
+    origin: ['http://localhost:8000', 'https://startup-l5l8r39eh-tuan-anhs-projects-770b952f.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
