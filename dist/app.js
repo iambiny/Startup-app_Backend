@@ -12,7 +12,7 @@ const MONGODB_URI = process.env.MONGODB_URI || '';
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({
-    origin: 'https://startup-app-fawn.vercel.app',
+    origin: ['http://localhost:8000', 'https://startup-app-fawn.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
